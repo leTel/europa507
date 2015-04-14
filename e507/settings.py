@@ -116,6 +116,6 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
 try:
-    execfile(os.path.join(PROJECT_DIR, "selfcare/local_settings.py"), globals(), locals())
+    execfile(os.path.join(PROJECT_DIR, "e507/local_settings.py"), globals(), locals())
 except IOError:
     pass

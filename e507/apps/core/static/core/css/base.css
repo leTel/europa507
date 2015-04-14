@@ -1,0 +1,106 @@
+/****************************************/
+/*****            FONTS             *****/
+/****************************************/
+
+@font-face {
+    font-family: 'Roboto';
+         url('../fonts/roboto.woff') format('woff'),     /* Modern Browsers */
+         url('../fonts/roboto.ttf') format('truetype'),  /* Safari, Android, iOS */
+         url('../fonts/roboto.svg') format('svg');       /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Stonehenge';
+         url('../fonts/stonehenge.woff') format('woff'),
+         url('../fonts/stonehenge.ttf') format('truetype'),
+         url('../fonts/stonehenge.svg') format('svg');
+}
+
+
+/****************************************/
+/*****         STICKY FOOTER        *****/
+/****************************************/
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/****************************************/
+/*****          MAIN STYLE          *****/
+/****************************************/
+
+html,
+body {
+    font-family: 'Roboto', "Arial Black", Verdana, Arial, Trebuchet, sans-serif;
+    font-size: 1.1em;
+    color: #001040;
+}
+
+a.navbar-brand .logo {
+    height: 80%;
+    display: inline;
+    padding-right: 5px;
+}
+
+div.page-header {
+    background-color: #70a0f0;
+    font-family: 'Stonehenge', 'Roboto', Verdana, Arial, Trebuchet, sans-serif;
+    color: #ffffff;
+    padding-top: 30px;
+}
+
+div.page-title {
+    font-size: 2.5em;
+}
+
+div.page-intro {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #2050a0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/****************************************/
+/*****          NAV BAR             *****/
+/****************************************/
