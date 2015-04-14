@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+from django.utils.translation import ugettext_lazy as _
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -39,6 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'crispy_forms',
 
     'e507.apps.core',
     'e507.apps.news',
@@ -80,6 +83,12 @@ WSGI_APPLICATION = 'e507.wsgi.application'
 
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = (
+  ('fr', _('French')),
+  ('en', _('English')),
+  ('de', _('German')),
+)
+
 TIME_ZONE = 'CET'
 
 USE_I18N = True
@@ -117,6 +126,8 @@ STATICFILES_DIRS = (
 )
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
 try:

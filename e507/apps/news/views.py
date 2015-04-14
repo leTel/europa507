@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
 import e507.apps.news.models
+import e507.apps.news.forms
 
 
 def home_view(request):
@@ -18,15 +19,25 @@ def detail_view(request, news_id):
 
 
 def add_view(request):
-    added_alert = False
+    added = False
+    invalid_form = False
 
     if request.method == 'POST':
-        news_title = request.POST['title']
-        news_message = request.POST['message']
-        news = e507.apps.news.models.News(title=news_title, message=news_message)
-        news.save()
-        added_alert = True
+        form = e507.apps.news.forms.NewsForm(request.POST)
+        if form.is_valid():
+            news_title = form.cleaned_data['title']
+            news_message = form.cleaned_data['message']
+            news = e507.apps.news.models.News(title=news_title, message=news_message)
+            news.save()
+            added = True
+        else :
+            invalid_form = form.errors
+    else :
+        form = e507.apps.news.forms.NewsForm()
 
     return render(request, 'news/add.html', {
-        'added_alert' : added_alert,
+        'form' : form,
+
+        'added_alert' : added,
+        'invalid_form_alert' : invalid_form,
     })

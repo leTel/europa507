@@ -44,6 +44,75 @@ body {
   background-color: #f5f5f5;
 }
 
+/****************************************/
+/*****          NAV BAR             *****/
+/****************************************/
+.navbar-inverse {
+    background-color: #0C334B;
+    border-color: #080808;
+    font-size: 0.8em;
+}
+
+.navbar-brand > .logo {
+    height: 25px;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover {
+    color: #C9DDF0;
+    background-color: #00273e;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #C9DDF0;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+    background-color: transparent;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #C9DDF0;
+}
+
+
+/****************************************/
+/*****  BOOTSTRAP PERSONALIZATION   *****/
+/****************************************/
+
+.btn {
+    border-radius: 2px;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #448BB7;
+    border-color: #0C334B;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background-color: #0C334B;
+}
+
+.well {
+    border: 1px solid #d8ecff;
+    border-radius: 2px;
+}
+
 
 /****************************************/
 /*****          MAIN STYLE          *****/
@@ -56,13 +125,12 @@ body {
     color: #001040;
 }
 
-
-
 div.page-header {
     background-color: #448BB7;
     font-family: 'Stonehenge', 'Roboto', Verdana, Arial, Trebuchet, sans-serif;
     color: #ffffff;
-    padding-top: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 div.page-title {
@@ -97,40 +165,4 @@ a:hover {
 }
 
 
-/****************************************/
-/*****          NAV BAR             *****/
-/****************************************/
-.navbar-inverse {
-    background-color: #0C334B;
-    border-color: #080808;
-    font-size: 0.8em;
-}
 
-.navbar-brand > .logo {
-    height: 25px;
-}
-
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-brand:focus,
-.navbar-inverse .navbar-brand:hover {
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .active > a:hover {
-    color: #448BB7;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > li > a:focus,
-.navbar-inverse .navbar-nav > li > a:hover {
-    color: #C9DDF0;
-    background-color: transparent;
-}
-
-
-.navbar-inverse .navbar-nav > li > a {
-    color: #FFF;
-    background-color: transparent;
-}
