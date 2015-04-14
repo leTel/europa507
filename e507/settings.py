@@ -38,6 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    'e507.apps.core',
+    'e507.apps.news',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,7 +55,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'e507.urls'
+ROOT_URLCONF = 'e507.apps.core.urls'
 
 TEMPLATES = [
     {

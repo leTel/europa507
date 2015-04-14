@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+{% block page_title %}{% trans 'Add a news' %}{% endblock %}
+
+{% block content %}
+    {% if added_alert %}<p><strong>{% trans 'News has been added !' %}</strong></p>{% endif %}
+
+    <form action="{% url 'news:add_view_url' %}" method="post">
+        {% csrf_token %}
+        <label for="title">{% trans 'Title' %}</label><br />
+        <input type="text" name="title" id="title"/>
+        <label for="message">{% trans 'Message' %}</label><br />
+        <input type="text" name="message" id="message"/>
+        <input type="submit" value="{% trans 'Add news' %}" />
+    </form>
+{% endblock %}
