@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'crispy_forms',
+    'redactor',
 
     'e507.apps.core',
     'e507.apps.news',
@@ -118,16 +119,25 @@ ALLOWED_HOSTS = ['*']
 # Static asset configuration
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfiles'),
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media'),
+MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# WYSIWYG redactor configuration
+REDACTOR_OPTIONS = {'lang': 'fr', 'plugins': ['table', 'fontcolor', 'fontsize', 'filemanager', 'imagemanager']}
+REDACTOR_UPLOAD = MEDIA_ROOT
+REDACTOR_UPLOAD_HANDLER = 'e507.apps.core.storage.UploadDateDirectoryUploader'
+REDACTOR_FILE_STORAGE = 'e507.apps.core.storage.redactor_storage'
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(__file__))
 try:

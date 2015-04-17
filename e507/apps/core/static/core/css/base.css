@@ -69,23 +69,23 @@ body {
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:focus,
 .navbar-inverse .navbar-nav > .open > a:hover {
-    color: #C9DDF0;
+    color: #ffffff;
     background-color: #00273e;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #C9DDF0;
+    color: #ffffff;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #FFF;
+    color: #c9ddf0;
     background-color: transparent;
 }
 
 .dropdown-menu > li > a:hover {
-    background-color: #C9DDF0;
+    background-color: #c9ddf0;
 }
 
 
@@ -111,6 +111,10 @@ body {
 .well {
     border: 1px solid #d8ecff;
     border-radius: 2px;
+}
+
+label {
+    font-weight: normal;
 }
 
 
@@ -164,5 +168,8 @@ a:hover {
   padding-right: 15px;
 }
 
-
+#div_id_start_date > .controls,
+#div_id_end_date > .controls {
+    position: relative;
+}
 

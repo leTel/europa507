@@ -1,27 +1,42 @@
 {% extends 'core/base.html' %}
-{% load i18n crispy_forms_tags %}
+{% load i18n crispy_forms_tags staticfiles %}
 
 {% block page_icon %}glyphicon glyphicon-flag{% endblock %}
 {% block page_title %}{% trans 'Add a news' %}{% endblock %}
 {% block page_intro %}{% trans 'Tell the world about the latest Europa 507 news.' %}{% endblock %}
 
 {% block content %}
-    {% if added_alert %}<p><strong>{% trans 'News has been added !' %}</strong></p>{% endif %}
+{% if added_alert %}<p><strong>{% trans 'News has been added !' %}</strong></p>{% endif %}
+{% if invalid_form_alert %}<p><strong>{% trans 'The news was not added ! Here is the error' %}: {{ invalid_form_alert }}</strong></p>{% endif %}
 
-    <div class="well">
-        <form method="post">{% csrf_token %}
-            {{ form|crispy }}
-            <div class="form-actions">
-                <button type="submit" class="btn btn-primary" >{% trans 'Add news' %}</button>
-            </div>
-        </form>
-    </div>
+<div class="well">
+    {{ form.media }}
+    {% crispy form %}
+</div>
 {% endblock %}
 
 {% block script %}
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#nav-news').addClass('active');
+<link rel="stylesheet" href="{% static 'news/css/bootstrap-datetimepicker.min.css' %}">
+<script src="{% static 'news/js/moment-with-locales.js' %}"></script>
+<script src="{% static 'news/js/bootstrap-datetimepicker.min.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav-news').addClass('active');
+        $('.datetimepicker').datetimepicker({
+            format: "DD MM YYYY, HH:mm",
+            locale: 'fr',
+            showTodayButton: true,
+            icons: {
+                today: 'glyphicon glyphicon-record',
+                clear: 'glyphicon glyphicon-remove'
+            },
+            showClear: true,
+            minDate: $.now(),
+            widgetPositioning: {
+                horizontal: 'left',
+                vertical: 'bottom'
+            }
         });
-    </script>
+    });
+</script>
 {% endblock %}
