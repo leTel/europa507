@@ -129,6 +129,28 @@ body {
     color: #001040;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width:95%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width:90%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1240px) {
+    .container {
+        width: 80%;
+    }
+}
+
 div.page-header {
     background-color: #448BB7;
     font-family: 'Stonehenge', 'Roboto', Verdana, Arial, Trebuchet, sans-serif;

@@ -117,6 +117,21 @@ label {
     font-weight: normal;
 }
 
+@media (min-width: 768px) {
+    .container {
+        width:95%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width:90%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+}
 
 /****************************************/
 /*****          MAIN STYLE          *****/
@@ -156,16 +171,16 @@ a:hover {
 }
 
 #wrap > .container {
-  padding: 60px 15px 0;
+    padding: 60px 15px 0;
 }
 
 .container .credit {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 #footer > .container {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #div_id_start_date > .controls,
@@ -173,3 +188,9 @@ a:hover {
     position: relative;
 }
 
+/****************************************/
+/*****           AFFIX              *****/
+/****************************************/
+.affix {
+    top: 60px;
+}

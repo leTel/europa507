@@ -46,6 +46,7 @@ INSTALLED_APPS = (
 
     'e507.apps.core',
     'e507.apps.news',
+    'e507.apps.document',
 )
 
 MIDDLEWARE_CLASSES = (

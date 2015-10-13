@@ -15,5 +15,5 @@ class News(models.Model):
     active = models.BooleanField(default=True)
     language = models.CharField(max_length=20, choices=settings.LANGUAGES, default='fr')
 
-    def __str__(self):
+    def __unicode__(self):
         return self.title

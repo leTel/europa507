@@ -16,8 +16,11 @@
 
         <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}" />
         <link rel="stylesheet" href="{% static 'core/css/base.css' %}" />
+        <link rel="stylesheet" href="{% static 'news/css/bootstrap-datetimepicker.min.css' %}">
 
         <script src="{% static 'core/js/jquery.min.js' %}"></script>
+        <script src="{% static 'news/js/moment-with-locales.js' %}"></script>
+        <script src="{% static 'news/js/bootstrap-datetimepicker.min.js' %}"></script>
     </head>
     <body>
         <!-- Wrap all page content here -->
@@ -37,13 +40,15 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li id="nav-news" class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> {% trans 'News' %} <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> {% trans 'News' %} <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="{% url 'news:home_view_url' %}">{% trans 'Latest news' %}</a></li>
                             <li><a href="{% url 'news:add_view_url' %}">{% trans 'Add news' %}</a></li>
                         </ul>
                     </li>
-                    <li><a href="#about">Documents</a></li>
+                    <li id="nav-document">
+                        <a href="{% url 'document:document_view_url' %}"><span class="glyphicon glyphicon-book"></span> Documents</a>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
             </div>

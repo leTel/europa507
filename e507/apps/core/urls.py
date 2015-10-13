@@ -8,5 +8,7 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('e507.apps.news.urls', namespace='news')),
+    url(r'^document/', include('e507.apps.document.urls', namespace='document')),
+
     url(r'^redactor/', include('redactor.urls')),
 ]
