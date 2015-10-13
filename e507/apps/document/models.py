@@ -26,7 +26,7 @@ class Document(models.Model):
     category = models.CharField(max_length=100, choices=CATEGORY_CHOICES)
     version = models.CharField(max_length=10, default="0.1")
     template = models.CharField(max_length=200)
-    style = models.CharField(max_length=200, default="default_doc.css")
+    style = models.CharField(max_length=200, default="document/css/default_doc.css")
 
     def __unicode__(self):
         return u"{self.title}".format(**locals())
