@@ -1,0 +1,52 @@
+{% extends 'core/base.html' %}
+{% load i18n staticfiles %}
+
+{% block page_icon %}glyphicon glyphicon-book{% endblock %}
+{% block page_title %}{{ doc.title }}{% endblock %}
+{% block page_intro %}{{ doc.description }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xs-9">
+        <div class="well">
+            {% include doc.template %}
+        </div>
+    </div>
+    <div class="col-xs-3">
+        <div data-spy="affix" data-offset-top="252" data-offset-bottom"50">
+            <ul>
+                <li><a href="#">Start</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">test</a></li>
+                <li><a href="#">END</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<link rel="stylesheet" href="{% static doc.style %}" />
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav-document').addClass('active');
+    });
+</script>
+{% endblock %}
+

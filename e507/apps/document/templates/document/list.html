@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load i18n crispy_forms_tags staticfiles %}
+
+{% block page_icon %}glyphicon glyphicon-book{% endblock %}
+{% block page_title %}{% trans 'Documents' %}{% endblock %}
+{% block page_intro %}{% trans 'Read the rules, find a scenario and more !' %}{% endblock %}
+
+{% block content %}
+
+<div class="well">
+    <ul>
+        {% for doc in documents %}
+        <li><a href="{% url 'document:document_detail_view_url' doc_id=doc.id %}">[{{ doc.get_audience_display }} - {{ doc.get_category_display }}] {{ doc.title }} : {{ doc.description }} - {{ doc.version }}</a></li>
+        {% empty %}
+        <li>{% trans "There is no document for the moment" %}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#nav-document').addClass('active');
+    });
+</script>
+{% endblock %}
