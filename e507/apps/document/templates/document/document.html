@@ -6,6 +6,36 @@
 {% block page_intro %}{{ doc.description }}{% endblock %}
 
 {% block content %}
+<!-- Modal -->
+<div class="modal fade" id="image-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-img">
+                    <img src="#" />
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        Auteur : <span id="modal-author"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        License: <a id="modal-link" href="#" target="blank"><span id="modal-licence"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="row">
     <div class="col-xs-9">
         <div class="well">
@@ -41,6 +71,19 @@
                 $('#side-menu > ul').append("<li><a href='#"+id+"'>"+title+"</a></li>");
             }
         }); 
+
+        $('figure a').on('click', function(){
+            $('#modal-title').html($(this).attr("data-title"));
+            $('#modal-author').html($(this).attr("data-author"));
+            $('#modal-licence').html($(this).attr("data-licence"));
+            $('#modal-link').attr('href', $(this).attr("data-link"));
+            $('#image-modal img').attr('src', $(this).children("img").attr('src'));
+            $('#image-modal').modal();
+        });
+
+        $('#image-modal').on('shown.bs.modal', function () {
+            $('#image-modal').focus()
+        })
     });
 </script>
 {% endblock %}

@@ -53,3 +53,16 @@
     background-color: #f2f8ff;
     padding: 2px;
 }
+
+/* IMAGE */
+.document figure {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.document figure img {
+    max-width: 75%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}

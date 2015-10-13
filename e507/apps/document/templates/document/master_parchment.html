@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <div class="document">
 <ol>
 <h1 id="1"><li>Introduction</li></h1>
@@ -18,14 +20,26 @@
 <p>Avant de décrire l'univers d'Europa 507, il est important de préciser un point de l'Histoire de l'Europe. Les invasions barbares ont longtemps été considérées comme une attaque massive des peuples barbares contre l'Empire romain rayant tout simplement celui-ci de la carte et le remplaçant par différents royaumes germaniques.</p>
 <p class="note">À l'époque qui nous intéresse, tous les peuples qui vivaient à l'extérieur des frontières de l'Empire romain étaient appelés Barbares ou peuples barbares. Ce terme ne désigne pas un peuple en particulier, mais l'ensemble des peuplades qui entrèrent en contact avec les Romains.<p>
 <p>Malheureusement (ou heureusement) la transition entre l'Empire romain et les royaumes barbares ne peut pas être exprimée d'une manière aussi simpliste. Les Barbares se sont installés petit à petit dans l'Empire romain, le plus souvent sous l'impulsion même de ces derniers (en tant que mercenaires dans leur armée ou suite à des traités) et les deux peuples, romains et germains, se sont mélangés. Voici donc un survol de la situation historique de l'époque qui vous permettra d'être à l'aise dans la masterisation d'une partie d'Europa 507.<p>
+<figure>
+    <a href="javascript:void(0)" data-author="Peter Johann Nepomuk Geiger" data-title="Les Huns au combat contre les Alains : illustration de Geiger (1873)" data-licence="Domaine publique" data-link="https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29">
+        <img src="{% static 'document/master_parchment/images/I1.jpg' %}" alt="Peinture de J.N. Geiger représentant une attaque des Huns" />
+        <figcaption>Peinture de J.N. Geiger représentant une attaque des Huns</figcaption>
+    </a>
+</figure>
 <h2 id="22">Situation historique générale</h2>
 <p class="note">Ce chapitre qui résume plus d'un siècle de l'histoire européenne est dense mais indispensable pour maîtriser l'univers d'Europa 507. Pour bien l'assimiler, lisez ce chapitre en plusieurs fois ! Quand vous sentez votre cerveau surchauffer, n'hésitez pas à sauter à un autre chapitre avant de revenir !</p>
 <p>Nous sommes en l'an 507. Mais pour comprendre les relations entre les différents peuples jouables et la situation actuelle de l'Europe, il nous faut remonter près d'un siècle et demi en arrière.</p>
 <h3>375 – fin du IV<sup>e</sup> siècle</h3>
 <p>À cette époque les Huns qui fuient l'Asie à cause des sécheresses et des hivers difficiles soumettent les Ostrogoths et repoussent les Wisigoths qui demandent alors asile à l'Empire romain. Ces derniers acceptent de les laisser s'établir au sud du Danube en échange de l'engagement de recrues dans l'armée romaine. Plus de 200'000 Wisigoths s'établissent ainsi dans l'Empire romain d'orient.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Laurent Lugon Moulin" data-title="375 - 395" data-licence="Attribution-ShareAlike 4.0 International" data-link="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="{% static 'document/master_parchment/images/I2.png' %}" alt="Carte de l'Europe entre 375 et 395" />
+        <figcaption>375 -395</figcaption>
+    </a>
+</figure>
 <p class="note">L'Empire romain est divisé en 2 depuis le règne de l'empereur Dioclétien (286 – 305) et ses nombreuses réformes militaires et économiques. Les deux “états” sont l'Empire romain d'occident et l'Empire romain d'orient (également appelé empire byzantin) comptant chacun un empereur.</p>
 <p>L'année suivante la famine frappe la région et les gouverneurs romains exploitent cruellement les Wisigoths. Ils finissent par se révolter en 378. Cette guerre débouchera par la mort de l'empereur romain d'orient Valens lors de la bataille d'Andrinople. La victoire fut remportée par Fritigern qui fut élu roi des Wisigoths.</p>
-<p>Le nouvel empereur d'orient Théodose 1er réussit à conclure un <i>fœdus</i> avec Fritigern permettant ainsi aux Wisigoths de vivre en Thrace avec pour seule obligation celle de servir en tant que fédérés dans l'armée romaine. La paix durera jusqu'à la fin du règne de l'empereur romain Théodose 1er qui meurt en 395.</p>
+<p>Le nouvel empereur d'orient Théodose 1<sup>er</sup> réussit à conclure un <i>fœdus</i> avec Fritigern permettant ainsi aux Wisigoths de vivre en Thrace avec pour seule obligation celle de servir en tant que fédérés dans l'armée romaine. La paix durera jusqu'à la fin du règne de l'empereur romain Théodose 1<sup>er</sup> qui meurt en 395.</p>
 <p class="note">Le <i>fœdus</i> est un accord passé entre l'Empire romain et un peuple barbare. Il permet à ce dernier de s'établir sur le territoire romain tout en conservant l'ensemble de ses lois et de sa hiérarchie.</p>
 <p class="note">Les fédérés ne sont pas soumis aux lois romaines ni à leur impôt. La seule obligation des fédérés est de fournir des recrues à l'armée romaine (contre rétribution). Ces recrues doivent se présenter avec leur équipement et leur chef au combat.</p>
 <p class="note">Le <i>fœdus</i> n'est pas perçu comme un acte de soumission par les fédérés. Au contraire, de leur point de vue ils ont le privilège de vivre au sein de l'Empire Romain de manière indépendante et de participer aux guerres avec leurs propres troupes ce qui est une opportunité de gagner en gloire et en richesse !</p>
@@ -34,10 +48,28 @@
 <p>En 402, l'Empire romain d'orient qui se remet à peine des ravages des Wisigoths subits un assaut des Ostrogoths, soumis aux Huns, qui envahissent les régions au sud du Danube. Les Wisigoths continuent leurs pillages plus à l'ouest en entrant en Italie.</p>
 <p>En 406, grâce à un hiver très rude faisant geler le Rhin et le Danube, de nombreuses tribus barbares dont les Suèves et un peu plus tard les Burgondes franchissent les fleuves et dépassent les limes germaniques. Ils pillent la Gaule et l'Ile de Bretagne qui est alors définitivement abandonnée par les Romains.</p>
 <p class="note">Les limes sont un système de fortification mis en place par les Romains pour protéger leurs frontières. Les limes germaniques se trouvent entre le Rhin et le Danube.</p>
-<p>En 410, les Wisigoths menés par Alaric 1er vont jusqu'à mettre à sac Rome elle-même durant 3 jours ! Ils finissent par s'installer en Gaule et en Hispanie mettant ainsi fin à leurs pillages.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Holger Weinandt" data-title="Cohort Fort Saalburg" data-licence="CC BY-SA 3.0 de" data-link="http://creativecommons.org/licenses/by-sa/3.0/de/deed.en">
+        <img src="{% static 'document/master_parchment/images/I3.jpg' %}" alt="Cohort Fort Saalburg" />
+        <figcaption>Limes de Saalburg</figcaption>
+    </a>
+</figure>
+<p>En 410, les Wisigoths menés par Alaric 1<sup>er</sup> vont jusqu'à mettre à sac Rome elle-même durant 3 jours ! Ils finissent par s'installer en Gaule et en Hispanie mettant ainsi fin à leurs pillages.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Laurent Lugon Moulin" data-title="395 - 410" data-licence="Attribution-ShareAlike 4.0 International" data-link="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="{% static 'document/master_parchment/images/I4.png' %}" alt="Carte de l'Europe entre 395 et 410" />
+        <figcaption>395 - 410</figcaption>
+    </a>
+</figure>
 <p>L'empereur qui n'est plus établi à Rome mais à Ravenne, doit alors accepter que les Barbares implantent leurs royaumes en Gaule.</p>
 <p>Les Vandales envahissent l'Afrique en 429 privant Rome de leur fournisseur principal de grain et du contrôle de la mer Méditerranée. À nouveau, Rome est forcée d'accorder un <i>fœdus</i> aux Vandales en Afrique en 435 et quelques années plus tard aux Barbares suèves à l'ouest de l'Europe.</p>
 <p>Il ne reste alors plus que l'Italie, une partie de la Gaule et de l'Afrique à l'Empire romain d'occident. Les frontières est de l'Empire romain d'orient ont également reculées.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Laurent Lugon Moulin" data-title="415 - 435" data-licence="Attribution-ShareAlike 4.0 International" data-link="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="{% static 'document/master_parchment/images/I5.png' %}" alt="Carte de l'Europe entre 415 et 435" />
+        <figcaption>415 - 435</figcaption>
+    </a>
+</figure>
 <h3>V<sup>e</sup> siècle</h3>
 <p>Sous Valentinien III, le général Aetius continue à défendre l'Empire romain d'occident. Il lutte au nord face aux Francs (qui sont un groupement de tribus barbares arrivées vers 406), repousse les Wisigoths au sud de la Gaule et de l'Hispanie avec ses alliés huns et bat les Burgondes. Ces derniers s'installent en Sapaudie (entre le Jura et les Alpes) et obtiennent un <i>fœdus</i> de l'Empereur.</p>
 <p>En 451 la situation s'inverse et c'est en étant allié aux Wisigoths que le général Aetius repousse cette fois les Huns au nord-est. 3 ans plus tard, Aetius est tué des mains même de l'Empereur Valentinien III. </p>
@@ -49,10 +81,22 @@
 <p>Les peuples barbares ayant bien été intégrés à l'armée et à la vie civile romaine continuèrent toutefois de respecter l'autorité de l'empereur romain jusqu'en 466 où les Wisigoths rompent leur <i>fœdus</i> et recommencent à étendre leur royaume. Les Romains vivant sur les territoires conquis s'adaptent au style de vie wisigoth se laissant pousser les cheveux et la barbe et portant des braies.</p>
 <p>De leur côté, les Francs s'installent de plus en plus largement en Gaule jusqu'à rencontrer les Wisigoths contre qui ils entrent en guerre.</p>
 <p>Libérés du joug des Huns, les Ostrogoths étendent leur royaume pour couvrir toute l'Italie. En 480, Théodoric, roi des Ostrogoths, garda en place les nobles romains et respecta l'autorité de l'empereur. Il devint le défenseur des Romains en occident et fut même nommé gouverneur en 498. Il tenta de rallier les différents royaumes barbares d'occident et de pacifier les Francs et les Wisigoths mais il échoue.</p>
-<p>L'illustration 6 montre l'état des 7 royaumes et empires principaux d'Europe en 507. Ce sont ces peuples qui peuvent être joués.</p>
+<p>L'illustration ci-dessous montre l'état des 7 royaumes et empires principaux d'Europe en 507. Ce sont ces peuples qui peuvent être joués.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Laurent Lugon Moulin" data-title="Principaux Royaumes et Empires d'Europe en 507" data-licence="Attribution-ShareAlike 4.0 International" data-link="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="{% static 'document/master_parchment/images/I6.png' %}" alt="Principaux Royaumes et Empires d'Europe en 507" />
+        <figcaption>Principaux Royaumes et Empires d'Europe en 507</figcaption>
+    </a>
+</figure>
 <h2 id="23">Organisation de l'armée</h2>
 <p>Afin de pouvoir gérer des combats de grandes envergures dans le jeu, il est important que vous compreniez le fonctionnement des armées !</p>
 <p>Voici un rapide point de l'armée romaine, de l'évolution de sa stratégie et de son équipement au cours des derniers siècles, jusqu'à son remplacement par l'ost à la chute de l'Empire romain d'occident.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Inconnu" data-title="Différents soldats romains" data-licence="Domaine publique" data-link="https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29">
+        <img src="{% static 'document/master_parchment/images/I7.gif' %}" alt="Différents soldats romains" />
+        <figcaption>Différents soldats romains</figcaption>
+    </a>
+</figure>
 <h3>Jusqu'au IV<sup>e</sup> siècle</h3>
 <p>Depuis le I<sup>e</sup> siècle avant J.C. et Jusque vers 380, l'armée romaine est une armée permanente de soldats de métier qui s'engagent pour de longues périodes de service (de 12 à 40 ans). Ces soldats doivent être des citoyens romains. L'armée est faite de légions romaines et de troupes auxiliaires composées de pérégrins et de Barbares qui sont cantonnées aux frontières de l'Empire. La garde prétorienne est stationnée à Rome.</p>
 <p class="note">Les pérégrins sont des habitants des provinces de l'Empire romain mais qui ne sont pas des citoyens romains.</p>
@@ -62,8 +106,14 @@
 <p class="note">Les fédérés sont des peuples vivant dans le territoire romain et sous l'autorité impériale mais qui conservent leur autonomie (on appelle cet accord un <i>fœdus</i>). Les premières troupes fédérées sont constituées de Goths qui se sont installés en Thrace.</p>
 <p>Le contingent de fédérés devient de plus en plus nombreux allant jusqu'à dépasser les troupes romaines. Au niveau du commandement, l'Empereur ne prend plus non plus le rôle de général qui est endossé par des gradés de l'armée.</p>
 <p>L’implantation des peuples barbares en Europe et la croissance du christianisme apportent aussi des changements dans l'armée.</p>
-<p class="note">En 380, le christianisme devient la religion officielle de l'empire romain sous Théodose 1er.</p>
-<p>On compte désormais des prêtres dans la légion et l'emblème même de l'armée romaine (l'aigle impériale) est remplacée par le chrisme sur le Labarum.</p>
+<p class="note">En 380, le christianisme devient la religion officielle de l'empire romain sous Théodose 1<sup>er</sup>.</p>
+<p>On compte désormais des prêtres dans la légion et l'emblème même de l'armée romaine (l'aigle impériale) est remplacée par le chrisme sur le <i>Labarum</i>.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Inconnu" data-title="Le chrisme sur le Labarum" data-licence="Domaine publique" data-link="https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29">
+        <img src="{% static 'document/master_parchment/images/I8.jpg' %}" alt="Le chrisme sur le Labarum" />
+        <figcaption>Le chrisme sur le <i>Labarum</i></figcaption>
+    </a>
+</figure>
 <p>Les Barbares commencent à être intégrés à l'armée romaine régulière qui n'est plus composée exclusivement de citoyens romains comme auparavant.</p>
 <p>Au court du V<sup>e</sup> siècle, le recrutement de Barbares dans les troupes romaines en plus de l'appui des fédérés est chose courante.</p>
 <p>Grace à l'aide apportée par ces troupes barbares, l'armée romaine continue de résister aux attaques de ses frontières pendant plusieurs décennies.</p>
@@ -75,20 +125,32 @@
 <p>Les nobles possèdent évidemment tout leur équipement martial, qu'il s'agisse d'armes, d'armures ou de chevaux. Leur participation à une guerre se monnaie parfois avec leur roi (quand ils sont en position de force). À l'inverse, les hommes libres se doivent de répondre à l'ost, sous peine de devoir payer l'hériban ou d'être réduit à l'esclavage jusqu'au remboursement de la dette.</p>
 <p class="note">L'hériban est une lourde amende que doivent payer les hommes libres ne répondant pas à un appel de l'ost. Elle s'élève à 60 sous, ce qui représente environ pour un artisan la somme qu'il peut gagner en une année de travail.</p>
 <h2 id="24">Organisation de la société civile</h2>
-<h3>L'Empire romain depuis Constantin 1er, de 324 à nos jours</h3>
-<p>Durant le règne de Constantin 1er de 324 à 337, l'administration territoriale, l'administration de l'état et l'armée sont réformées. Le christianisme est favorisé par le pouvoir.</p>
+<h3>L'Empire romain depuis Constantin 1<sup>er</sup>, de 324 à nos jours</h3>
+<p>Durant le règne de Constantin 1<sup>er</sup> de 324 à 337, l'administration territoriale, l'administration de l'état et l'armée sont réformées. Le christianisme est favorisé par le pouvoir.</p>
 <h4>L'administration territoriale</h4>
 <p>L'empereur sépare l'empire en quatre préfectures (Gaule, Italie, Illyrie et Orient). Il en délègue la gestion à ses césars qui possèdent chacun un préfet du prétoire.</p>
 <p class="note">César est un titre que donna Constantin à ses proches (fils et neveux) afin de leur donner un statut impérial pour qu'ils le représentent dans les quatre préfectures de l'Empire.</p>
 <h4>L'administration de l'état</h4>
-<p>Constantin 1er augmente la taille de sa cour, s'entourant de comtes de confiance. Ces comtes sont chargés directement par l'empereur de diverses missions en outrepassant l'administration traditionnelle. L'administration centrale de l’état est réorganisée et agrandie et on voit apparaître des agentes in rebus qui sont des messagers et qui jouent également le rôle d'espion.</p>
+<p>Constantin 1<sup>er</sup> augmente la taille de sa cour, s'entourant de comtes de confiance. Ces comtes sont chargés directement par l'empereur de diverses missions en outrepassant l'administration traditionnelle. L'administration centrale de l’état est réorganisée et agrandie et on voit apparaître des agentes in rebus qui sont des messagers et qui jouent également le rôle d'espion.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Inconnu" data-title="Solidus de Constantin 1er" data-licence="Domaine publique" data-link="https://fr.wikipedia.org/wiki/Domaine_public_%28propri%C3%A9t%C3%A9_intellectuelle%29">
+        <img src="{% static 'document/master_parchment/images/I9.jpg' %}" alt="Solidus de Constantin 1er" />
+        <figcaption><i>Solidus</i> de Constantin 1<sup>er</sup></figcaption>
+    </a>
+</figure>
 <h4>L'armée</h4>
-<p>Constantin 1er est un homme de terrain. Il a passé la majorité de son règne en campagne. Il a donc pu observer et corriger directement les mauvais fonctionnements de son armée.</p>
+<p>Constantin 1<sup>er</sup> est un homme de terrain. Il a passé la majorité de son règne en campagne. Il a donc pu observer et corriger directement les mauvais fonctionnements de son armée.</p>
 <p>Il remplace la garde prétorienne (constituée de noble romain et qui ont pris le partit d'un de ses adversaires avant son accession au trône) par une troupe de 2'500 cavaliers recrutés parmi les Germains.</p>
 <p>Il repense la fonction de préfet du prétoire qui été jusque-là le chef de l'armée. Désormais le commandement des troupes serra assuré par un maître des milices pour chaque préfecture lui-même assisté par un maître de cavalerie et un maître de l'infanterie. Les préfets du prétoire n'ont dorénavant plus qu'un rôle de gestion administratif du territoire.</p>
-<p>Après la mort de Constantin 1er suit une période trouble ou ses fils se disputent la direction de l'empire, Constantin 1er n'ayant laissé aucune instruction précise quant à sa succession.</p>
+<figure>
+    <a href="javascript:void(0)" data-author="Laurent Lugon Moulin" data-title="Les dirigeants de l'Empire romain" data-licence="Attribution-ShareAlike 4.0 International" data-link="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="{% static 'document/master_parchment/images/I10.png' %}" alt="Les dirigeants de l'Empire romain" />
+        <figcaption>Les dirigeants de l'Empire romain</figcaption>
+    </a>
+</figure>
+<p>Après la mort de Constantin 1<sup>er</sup> suit une période trouble ou ses fils se disputent la direction de l'empire, Constantin 1<sup>er</sup> n'ayant laissé aucune instruction précise quant à sa succession.</p>
 <p>Finalement c'est Julien, un des César, responsable de la Gaule qui devient le nouvel empereur. Mais il meurt rapidement dans une escarmouche et est succédé par Jovien le commandant de la garde impérial, mais il meurt la même année durant cette même campagne contre les Perses.</p>
-<p>Finalement c'est Valentinien 1er qui est le nouvel empereur et il sépare rapidement l'Empire en deux états bien distincts. Il confie l'Empire romain d'orient à son frère Valens et règne lui-même sur l'Empire romain d'occident.</p>
+<p>Finalement c'est Valentinien 1<sup>er</sup> qui est le nouvel empereur et il sépare rapidement l'Empire en deux états bien distincts. Il confie l'Empire romain d'orient à son frère Valens et règne lui-même sur l'Empire romain d'occident.</p>
 <p>Ceci marqua le début de la séparation définitive des deux empires. Au début la séparation était simplement administrative mais les deux états se renfermèrent de plus en plus sur eux-mêmes devenant deux états indépendants.</p>
 <h2 id="25">Personnalités</h2>
 <p>Pour terminer ce tour d'horizon, voici une liste des personnalités principales de l'antiquité tardive (dans l'ordre alphabétique) :</p>
@@ -96,13 +158,13 @@
 <p class="note">La croix † devant un personnage veut dire que ce dernier est mort. La couronne de laurier  distingue un personnage qui a été (ou qui est) empereur ou co-empereur. Enfin, la couronne  représente les rois actuels ou passés des royaumes germaniques.</p>
 <p>† Aetius surnommé “le dernier des Romains” (Flavius Aetius 395-454) est un sénateur, général et maître des milices de l'Empire romain d'occident. Son surnom lui vient de ses nombreuses victoires contre les Barbares et les Huns et du fait qu'il fut le dernier grand homme de l'empire d'origine romaine.</p>
 
-<p>Anastase 1er (Flavius Anastasius né en 430) est l'empereur byzantin actuel. Il est surnommé “Dicorus” (qui veut dire “deux-pupilles” en grec) car il a les yeux vairons. Il accède au pouvoir grâce au soutien d'Ariane, la veuve de son prédécesseur Zénon, qu'il épousera ensuite. C'est un bon gestionnaire, ayant amélioré l'administration, il permit une réduction des taxes, gagnant ainsi la sympathie du peuple.</p>
-<p>†  Arcadius (Flavius Arcadius 377-408)  est le fils de Théodose 1er “le Grand”. Il est un empereur de l'Empire romain d'Orient avec son frère Honorius. Comme lui, il est un empereur faible, n'étant qu'une façade et ses généraux représentent la vrai force de l'Empire.</p>
+<p>Anastase 1<sup>er</sup> (Flavius Anastasius né en 430) est l'empereur byzantin actuel. Il est surnommé “Dicorus” (qui veut dire “deux-pupilles” en grec) car il a les yeux vairons. Il accède au pouvoir grâce au soutien d'Ariane, la veuve de son prédécesseur Zénon, qu'il épousera ensuite. C'est un bon gestionnaire, ayant amélioré l'administration, il permit une réduction des taxes, gagnant ainsi la sympathie du peuple.</p>
+<p>†  Arcadius (Flavius Arcadius 377-408)  est le fils de Théodose 1<sup>er</sup> “le Grand”. Il est un empereur de l'Empire romain d'Orient avec son frère Honorius. Comme lui, il est un empereur faible, n'étant qu'une façade et ses généraux représentent la vrai force de l'Empire.</p>
 <p>†  Attila (Attila le Hun, 395-453) est le roi légendaire des Huns. Il régna de 434 jusqu'à sa mort en 453. Ses invasions sont considérées comme le déclenchement des Grandes Invasions et de la chute de l'Empire romain. Il mourut prématurément en 453, dans la nuit suivant ses noces avec Ildico. Les raisons de sa mort sont toujours obscures, mais un assassinat n'est pas exclu. Son empire ne survécu pas longtemps après lui.</p>
 <p>† Boniface (?-432), est comte d'Afrique sous Honorius puis Valentinien III. Il lutte en 428 contre l'établissement des Vandales en Afrique. Il mourra des suites de ses blessures en 432 après un affrontement contre Flavius Aetius, qu'il vaincra.</p>
-<p>†  Chlodéric (ou Clodéric ?-507) est le dernier roi des Francs rhénans. À sa mort, les Rhénans choisissent de rejoindre Clovis 1er unifiant ainsi le peuple franc.</p>
-<p> Clovis 1er (Chlodowig en francique, Chlodovechus en latin né en 466) est le premier roi à réunir tous les Francs en un seul royaume. Il est roi des Francs saliens depuis 481 et roi de tous les Francs depuis peu. Il lutte contre les Wisigoths qui menacent son royaume.</p>
-<p>†  Constantin 1er dit “le Grand” (Flavius Valerius Aurelius Constantinus 272-337) est un empereur romain. Il met fin à la persécution des chrétiens et établit la liberté de culte dans l'Empire romain. En 324 il transforme Byzance en Grèce, en une “nouvelle Rome” qu'il nomme Constantinople.</p>
+<p>†  Chlodéric (ou Clodéric ?-507) est le dernier roi des Francs rhénans. À sa mort, les Rhénans choisissent de rejoindre Clovis 1<sup>er</sup> unifiant ainsi le peuple franc.</p>
+<p> Clovis 1<sup>er</sup> (Chlodowig en francique, Chlodovechus en latin né en 466) est le premier roi à réunir tous les Francs en un seul royaume. Il est roi des Francs saliens depuis 481 et roi de tous les Francs depuis peu. Il lutte contre les Wisigoths qui menacent son royaume.</p>
+<p>†  Constantin 1<sup>er</sup> dit “le Grand” (Flavius Valerius Aurelius Constantinus 272-337) est un empereur romain. Il met fin à la persécution des chrétiens et établit la liberté de culte dans l'Empire romain. En 324 il transforme Byzance en Grèce, en une “nouvelle Rome” qu'il nomme Constantinople.</p>
 <p>†  Dioclétien (Caius Aurelius Valerius Diocletianus Augustus 244-311) est un empereur romain qui accéda au pouvoir après avoir été commandant de la cavalerie. Il divise l'empire entre lui-même et son coempereur Maximien ainsi que deux césars, fondant ainsi les bases de la séparation de l'Empire romain en deux états distincts.</p>
 <p>†  Euric ( ?-484) est roi des Wisigoths de 466 à sa mort en 484. Il était très instruit maitrisant le gotique, le grec et le latin. Il remporte de nombreuses victoires et agrandis le Royaume wisigoth vers l'ouest avec la Lusitanie et l'est avec une partie de la Gaule. Il meurt d'une mort naturelle en 484 à Arles.</p>
 <p>Euric était un fin stratège, par exemple, il feignait de ne pas comprendre le latin lors des rencontres diplomatiques, demandant la présence d'interprètes. Les Romains parlaient alors librement entre eux, ne se doutant pas qu'Euric saisissait toute la conversation.</p>
@@ -111,18 +173,18 @@
 <p>† Gaiso ( ?-351), † Mérobaud ( ?-388), † Richomer ( ?-393) et † Bauto ( ?-388) sont des guerriers francs ayant gradés dans l'armée romaine. Ils deviendront généraux et consuls, illustrants ainsi l'intégration des Barbares dans l'armée et la vie civile romaine.
 †  Genséric (ou Geiseric 399-477) règne durant 50 ans sur les Vandales. Il fait de ces Barbares insignifiants, pourchassés par les Huns et les Goths un peuple puissant qui contrôle la majorité des anciennes terres romaines en Afrique. Il bat la flotte byzantine et met à sac Rome pendant 15 jours en 455. Il meurt d'une mort naturelle à Carthage en 477.</p>
 <p>Gondebaud (ou Gondovald né avant 455) est roi des Burgondes d’abord conjointement avec ses frères dès 470, puis seul dès 501. Il a réussi à faire cohabiter en bonne intelligence les Burgondes et les Gallo-romains dans son royaume créant ainsi une vrai cohésion. Il est le roi actuel du Royaume burgonde.</p>
-<p>†  Honorius (Flavius Honorius 384–423) est le fils de Théodose 1er “le Grand”. Il est un empereur de l'Empire romain d'Occident, co-empereur avec son frère Arcadius. Il est connu pour avoir était un empereur faible. Il arrive à rester au pouvoir grâce au soutien de ses généraux successifs et à la sédation de parties de son empire aux peuples qui l'ont envahit.</p>
+<p>†  Honorius (Flavius Honorius 384–423) est le fils de Théodose 1<sup>er</sup> “le Grand”. Il est un empereur de l'Empire romain d'Occident, co-empereur avec son frère Arcadius. Il est connu pour avoir était un empereur faible. Il arrive à rester au pouvoir grâce au soutien de ses généraux successifs et à la sédation de parties de son empire aux peuples qui l'ont envahit.</p>
 <p>†  Hunéric (~430-484) est un roi vandale connu pour son règne violent durant lequel il persécuta et massacra les chrétiens orthodoxes.</p>
 <p>†  Maximien (Maximien Hercule, Marcus Aurelius Valerius Maximianus Herculius 250-310) est coempereur de Dioclétien. Il passe son temps en campagne luttant contre les Barbares en Gaule et le long des limes germaniques. Il finira par se suicider après une tentative d'usurpation qui échoue contre Constantin.</p>
 <p>Romulus Augustule (Flavius Momyllus Romulus Augustus né en 461) est le dernier empereur romain d'Occident qui fut déposé en 476. Il est souvent nommé Augustulus à la place d'Agustus. Augustulus signifiant “petit Auguste”. Durant son règne, il ne fut qu'une marionnette aux mains de son père Flavius Oreste, le magister militum. Quand son père est vaincu et tué, Romulus Augustule est envoyé en Campanie, au Castellum Lucullanum. On ne sait pas s'il est toujours en vie de nos jours.</p>
 <p>Théodoric dit “le Grand” ou “l'Amal” (Flavius Theodoricus né en 455) est devenu roi des Ostrogoths en 474. Depuis, il remporte de grandes victoires et a déjà conquis de nombreux territoires. Il est le roi actuel des Ostrogoths.</p>
-<p>†  Théodose 1er dit “le Grand” (Flavius Theodosius Augustus 347-395) est le dernier empereur de l'Empire romain uni qu'il sépare à sa mort entre ses deux fils, Arcadius et Honorius. Il accorda un <i>fœdus</i> au Wisigoth en 382.</p>
-<p>†  Théodose II (408-450) est le fils d'Arcadius et le petit fils de Téhodose 1er le Grand. Empereur romain d'Orient à l'age de 7 ans, il dirige sous la régence du préfet du prétoire puis de sa sœur. Il n'arrivera jamais à s'affirmer en tant qu'empereur est devra faire face à de nombreuse querelles religieuses. En 426, il fait écrire la Loi des citations, puis le Code de Théodose en 438. Il s'agit de documents regroupant toutes les lois impériales promulguées depuis 312.</p>
+<p>†  Théodose 1<sup>er</sup> dit “le Grand” (Flavius Theodosius Augustus 347-395) est le dernier empereur de l'Empire romain uni qu'il sépare à sa mort entre ses deux fils, Arcadius et Honorius. Il accorda un <i>fœdus</i> au Wisigoth en 382.</p>
+<p>†  Théodose II (408-450) est le fils d'Arcadius et le petit fils de Téhodose 1<sup>er</sup> le Grand. Empereur romain d'Orient à l'age de 7 ans, il dirige sous la régence du préfet du prétoire puis de sa sœur. Il n'arrivera jamais à s'affirmer en tant qu'empereur est devra faire face à de nombreuse querelles religieuses. En 426, il fait écrire la Loi des citations, puis le Code de Théodose en 438. Il s'agit de documents regroupant toutes les lois impériales promulguées depuis 312.</p>
 <p>Thrasamund (ou Trasamond date de naissance inconnue) est le roi vandale actuel. Après le règne de terreur de Hunéric, Thrasamund apporte un période de paix et d'ouverture à l'intérieur de son royaume envers les chrétiens orthodoxes, mais aussi envers ses voisins. Il maintient de bonne relation avec l'empire byzantin et avec les Ostrogoths. Il marie en 500 la sœur du roi des Ostrogoths, Théodoric le Grand, solidifiant l'alliance entre les deux peuples.</p>
 <p>† Ulfila dit “Évêque des Goths” (ou Wulfila ou Ulfilas 311-383) écrit la première traduction de la Bible en gotique. Il a joué un rôle important dans l'évangélisation des Goths.</p>
 <p>†  Valens (Flavius Julius Valens 328-378) est un empereur de l'Empire romain d'orient. Il a été tué au combat durant la révolte des Wisigoths.</p>
 <p>†  Valentinien III (Placidius Valentinianus 419-455) est un empereur romain d'occident qui résiste aux invasions barbares et aux Huns principalement grâce à son général Aetius qu'il finira par assassiner (par jalousie ou à cause de rumeur d'un coup d'état). Il finira lui-même assassiné par des partisans du défunt général.</p>
-<p>†  Zénon (Flavius Zeno Perpetuus, Tarasicodissa ou Tarasis 425-491) est un empereur byzantin d'origine isaurienne. Les Isauriens, bien qu'étant des citoyens de l'empire, étaient toujours considérés comme des barbares par les autres peuple romains. Il maria la fille de son prédécesseur, Léon 1er, ce dernier étant impressionné par les qualités militaires de Zénon. À la destitution de Romulus Augustule, Zénon devient le seul empereur romain, ayant théoriquement autorité sur tous les Royaumes barbares.</p>
+<p>†  Zénon (Flavius Zeno Perpetuus, Tarasicodissa ou Tarasis 425-491) est un empereur byzantin d'origine isaurienne. Les Isauriens, bien qu'étant des citoyens de l'empire, étaient toujours considérés comme des barbares par les autres peuple romains. Il maria la fille de son prédécesseur, Léon 1<sup>er</sup>, ce dernier étant impressionné par les qualités militaires de Zénon. À la destitution de Romulus Augustule, Zénon devient le seul empereur romain, ayant théoriquement autorité sur tous les Royaumes barbares.</p>
 <h2 id="26">Aller plus loin</h2>
 <p>Si après ce chapitre vous ne vous sentez pas assez à l'aise avec l'univers d'Europa 507 pour masteriser une partie ou si vous voulez tout simplement approfondir le sujet, je vous conseille ce petit livre qui donne un très bon aperçu de l'Europe dans la période qui nous intéresse :</p>
 <p>Jean Durliat, De l'Antiquité au Moyen Âge L'Occident de 313 à 800, éditions ellipses, ISBN 97827298-9043, 2014</p>
@@ -144,19 +206,19 @@ Au IV<sup>e</sup> siècle, pour pallier au manque de recrues romaines, de nombre
 Contrairement à leur engagement forcé en tant que Lètes, les Francs purent ici s'engager volontairement en étant rétribués et surtout sous le commandement de leurs propres chefs francs.
 Ils apprennent la stratégie romaine, sa discipline et parlent même le latin.
 En 406, lors des nombreuses invasions barbares, les deux tribus franques principales prennent des directions opposées. Les Francs rhénans pillent Thrèves en Germanie alors que les Francs saliens se battent au côté des Romains pour repousser les invasions en Belgique et en Germanie.
-Par la suite, les Francs saliens profitent du retrait des troupes romaines du nord de la Gaule suite aux invasions et s'emparent de Tournai. Ils sont toutefois battus par Aetius, le brillant général de l'époque, qui leur accorde par la suite un <i>fœdus</i>. Ils s'installent et prennent pour roi Clovis 1er qui regroupe toutes les tribus Franques à l'exception des Rhénans.
+Par la suite, les Francs saliens profitent du retrait des troupes romaines du nord de la Gaule suite aux invasions et s'emparent de Tournai. Ils sont toutefois battus par Aetius, le brillant général de l'époque, qui leur accorde par la suite un <i>fœdus</i>. Ils s'installent et prennent pour roi Clovis 1<sup>er</sup> qui regroupe toutes les tribus Franques à l'exception des Rhénans.
 Ces derniers luttent plus au sud face aux Alamans en s'alliant aux Burgondes. Ils obtiennent le droit de s'implanter aux alentour de Cologne et arrivent quelques années plus tard à vaincre les Alamans avec l'aide des Francs saliens menés par Clovis. À la mort du roi de Cologne Chlodéric en 507, ils choisissent Clovis comme successeur, unifiant ainsi toutes les tribus en un seul Royaume des Francs.
 Leur langue
 Les Francs parlent le latin vulgaire appris au contact des Romains et le bas-francisque qui est un ensemble de langues et de dialectes germaniques dérivés des différentes tribus franques.
 Leur religion
-Les Francs comme la majorité des peuples romains partageaient le paganisme polythéiste. Pour eux, Wuodan (ou Odin dans la mythologie nordique) était le père des dieux. Il eut pour épouse Frikka (ou Frigg ) et un fils Donar (ou Thor) dieu du tonnerre, du vent, des saisons et de la fertilité. Les héros francs étaient eux aussi élevés au rang de dieux. En 500, année où leur roi Clovis 1er se fit baptiser, ils adoptèrent massivement le catholicisme, suivant l'exemple de leur chef.
+Les Francs comme la majorité des peuples romains partageaient le paganisme polythéiste. Pour eux, Wuodan (ou Odin dans la mythologie nordique) était le père des dieux. Il eut pour épouse Frikka (ou Frigg ) et un fils Donar (ou Thor) dieu du tonnerre, du vent, des saisons et de la fertilité. Les héros francs étaient eux aussi élevés au rang de dieux. En 500, année où leur roi Clovis 1<sup>er</sup> se fit baptiser, ils adoptèrent massivement le catholicisme, suivant l'exemple de leur chef.
 
 Leur armée
 Les Francs utilisent principalement des scramasaxes, des framées (appelées aussi angons) et des francisques. Ce sont des guerriers légers, combattant à l'origine sans casque et torse nu avec une rondache de bois. Ils combattent majoritairement à pied, et ne possèdent pas de cavalerie lourde.
 Ils combattent en petits groupes, commençant par lancer plusieurs framées sur leurs ennemis, puis lançant des francisques en espérant briser les boucliers ennemis. Au corps à corps, ils abattent leur scramasaxe en restant groupés. Les cavaliers légers utilisent des framées lorsqu'ils chargent.
 Leurs alliances
 Les Francs sont alliés avec le Royaume burgonde et luttent au sud, sud-ouest contre les Wisigoths et à l'est contre différentes tribus de Barbares germains.
-Ils sont toujours des sujets de l'Empire romain d'orient, liés par leur <i>fœdus</i>. Toutefois la présence de l'Empire romain étant presque nul en occident, la domination romaine est relative. Le roi Clovis 1er est apprécié et respecté par les nobles romains d'orient de par sa conversion au catholicisme, de l'unification des Francs et de ses victoires sur le champ de bataille.
+Ils sont toujours des sujets de l'Empire romain d'orient, liés par leur <i>fœdus</i>. Toutefois la présence de l'Empire romain étant presque nul en occident, la domination romaine est relative. Le roi Clovis 1<sup>er</sup> est apprécié et respecté par les nobles romains d'orient de par sa conversion au catholicisme, de l'unification des Francs et de ses victoires sur le champ de bataille.
 Les relations avec les Ostrogoths sont tendues car ses derniers apportent parfois leur soutien dans la guerre que les Francs mènent aux Wisigoths.
 Comment bien jouer un Franc ?
 Les Francs n'ont pas un grand respect pour les romains d'Orient. Ils se souviennent de leur soumission à ces derniers durant de longues années et se battent pour leur indépendance en Occident.
@@ -165,11 +227,11 @@ Le Royaume wisigoth
 Leur histoire
 Issus des Goths, les Wisigoths envahirent la Dacie au début du III<sup>e</sup> siècle s'installant ainsi aux frontières de l'Empire romain.
 Ils tentèrent plusieurs fois d'envahirent des régions plus au sud, mais furent toujours repoussés par les armées romaines.
-En 376, ils demandent à l'empereur Valens l'autorisation de traverser le Danube pour se protéger des attaques des Huns (il leur était impossible de traverser en force ce large fleuve). Valens accepte et les aide à traverser, mais ils doivent en échange devenir des vassaux de Rome au travers d'un <i>fœdus</i>. Après une révolte due à la famine et aux mauvais traitements des gouverneurs romains, les Wisigoths concluent une paix avec Théodose 1er, le successeur de Valens, qui durera jusqu'en 395 à la mort de l'empereur.
+En 376, ils demandent à l'empereur Valens l'autorisation de traverser le Danube pour se protéger des attaques des Huns (il leur était impossible de traverser en force ce large fleuve). Valens accepte et les aide à traverser, mais ils doivent en échange devenir des vassaux de Rome au travers d'un <i>fœdus</i>. Après une révolte due à la famine et aux mauvais traitements des gouverneurs romains, les Wisigoths concluent une paix avec Théodose 1<sup>er</sup>, le successeur de Valens, qui durera jusqu'en 395 à la mort de l'empereur.
 Il s’ensuivit une période entrecoupée de paix et de guerre jusqu'à ce que les familles de plus de 30'000 soldats wisigoths servant dans l'armée romaine furent massacrés. Alaric déclara alors la guerre et les Wisigoths entamèrent leurs raids à travers l'Empire.
 Après avoir saccagé les régions au sud du Danube, ils arrivent en 410 aux portes de Rome et devant le refus de l'empereur Honorius d'entamer des négociations, les Wisigoths pillent la ville. Ce fut un choc considérable pour tous les Romains de l'Empire.
 Ils continuent leur pillage vers la Gaule et finalement en 416 concluent un nouveau <i>fœdus</i> installant les Wisigoths en Gaule. Rome les envoient alors en Hispanie combattre les Vandales qu'ils repoussent en Afrique et les Suèves qui sont repoussés plus à l'est. Plus tard ils obtiennent le droit de s'installer également en Hispanie, toujours en tant que fédérés de Rome.
-En 451, ils participent à la guerre contre Attila et les Huns, leurs ennemis de toujours, mais leur roi Théodoric 1er trouve la mort au combat. Les Huns sont tout de même défaits et repoussés hors de l'Empire romain.
+En 451, ils participent à la guerre contre Attila et les Huns, leurs ennemis de toujours, mais leur roi Théodoric 1<sup>er</sup> trouve la mort au combat. Les Huns sont tout de même défaits et repoussés hors de l'Empire romain.
 En 466, le nouveau roi Euric rompt le <i>fœdus</i> et  les Wisigoths battent une nouvelle fois les Suèves et s'emparent de la Lusitanie. Ils contrôlent maintenant la quasi-totalité de la péninsule, hormis la Galice, toujours aux mains des Suèves.
 Dans les années suivantes, ils tentent sans succès de débarquer sur l'Ile de Bretagne.
 De nos jours, en 507, ils dominent une large partie de l'Europe centrale allant de l'Hispanie en Gaule, jusqu'aux frontières de l'Italie. Toutefois, le Royaume wisigoth ayant des dimensions impressionnantes, il n'est pas complètement colonisé par ces derniers.
@@ -258,7 +320,7 @@ Leur histoire
 C'est en 312, sous l'empereur romain Constantin le Grand que Byzance et les possessions grecques de l'empire sont considérablement étendues.
 Constantin fait même de Byzance la nouvelle résidence impériale, qu'il appellera Nova Roma (la nouvelle Rome). La ville de Byzance fut appelée Constantinople (du Grec Konstantinoupolis, la ville de Constantin).
 La résidence impériale est le lieu depuis lequel est exercé le pouvoir romain. Rome a toujours été la seule capitale de l'Empire, mais il y a eut de nombreuses autres résidences impériales comme Sirmium, Antioche ou Milan.
-L'Empire romain d'orient (ou Empire byzantin, du nom de sa capitale Byzance) est définie en tant qu'état de l'Empire romain en 395, lors de la division par Théodose 1er à sa mort de l'Empire pour ses deux fils, Honorius qui devient empereur d'occident et Arcadius qui devient le premier empereur d'orient (ou empereur byzantin). Toutefois à cette date, il n'y a pas vraiment de séparation entre les deux empires. Les même lois sont promulguées en orient et en occident et l'empereur d'orient ratifie l'intronisation du nouvel empereur d'occident et inversement.
+L'Empire romain d'orient (ou Empire byzantin, du nom de sa capitale Byzance) est définie en tant qu'état de l'Empire romain en 395, lors de la division par Théodose 1<sup>er</sup> à sa mort de l'Empire pour ses deux fils, Honorius qui devient empereur d'occident et Arcadius qui devient le premier empereur d'orient (ou empereur byzantin). Toutefois à cette date, il n'y a pas vraiment de séparation entre les deux empires. Les même lois sont promulguées en orient et en occident et l'empereur d'orient ratifie l'intronisation du nouvel empereur d'occident et inversement.
 À la fin du IV<sup>e</sup> siècle, l'Empire romain d'orient est la cible de plusieurs attaquent des Barbares germains, principalement des Wisigoths et des Ostrogoths jusqu'à la signature d'un <i>fœdus</i> en 382, qui les installent au sud du Danube.
 Dès le début du V<sup>e</sup> siècle, c'est l'Empire romain d'occident qui devient la cible des peuples germains et des Huns. Constantinople envoie de l'aide quand il le peut car l'Empire romain d'orient est lui-même inquiété par le puissant Empire perse des Sassanides avec qui les périodes de guerre et de paix se succèdent jusqu'en 506 ou les Perses à bout, signent un traité de paix.
 En 410, le sac de Rome par les Wisigoths est un véritable choc pour les Byzantins, qui eux, ne sont pas inquiétés par les Barbares. Durant toute la première moitié du V<sup>e</sup> siècle, Constantinople vie un age d'or. Le trésor impérial est plein est la ville construit une deuxième enceinte, le mur de Théodose (du nom de l'empereur de l'époque, Théodose II).
@@ -266,13 +328,13 @@ En 410, le sac de Rome par les Wisigoths est un véritable choc pour les Byzanti
 Toutefois, Constantinople est menacée par les Huns dès 440, qui ravagent le sud du Danube et Théodose II est contraint de payer un tribut annuel à Attila.
 En 453, la mort d'Attila et la révolte des peuples germains qui lui étaient soumis éloignent le danger.
 En 476, la destitution de Romulus Augustule, fait de l'empereur byzantin Zénon le seul empereur de l'Empire romain. Toutefois, son autorité sur l'Occident est théorique, car ce sont les Royaumes germains qui le dirige véritablement.
-En 491, le nouvel empereur Anastase 1er succède à Zénon. Il réorganise les impôts et favorise le commerce et l'artisanat dans l'Empire. La cité de Constantinople vie un nouvel age d'or.
+En 491, le nouvel empereur Anastase 1<sup>er</sup> succède à Zénon. Il réorganise les impôts et favorise le commerce et l'artisanat dans l'Empire. La cité de Constantinople vie un nouvel age d'or.
 Leur langue
 Les byzantins parlent principalement le latin. Certains nobles et sages de l'Empire parlent également le grec qui s'impose de plus en plus dans l'Empire romain d'orient.
 Leur religion
 Les Byzantins sont chrétiens, mais ils sont déchirés par deux doctrines différentes : le monophysisme qui soutient que la nature de Christ est uniquement divine ayant absorbé sa nature humaine, et le miaphysisme qui soutient que les deux natures cohabitent dans le Christ.
 
-L'empereur Anastase 1er, plutôt monophysite reste neutre face à cet affrontement et tente de faire cohabiter les deux doctrines qui sont toutefois à l'origine d'affrontement et de déchirement interne à l'Empire.
+L'empereur Anastase 1<sup>er</sup>, plutôt monophysite reste neutre face à cet affrontement et tente de faire cohabiter les deux doctrines qui sont toutefois à l'origine d'affrontement et de déchirement interne à l'Empire.
 Leur armée
 L'armée byzantine est sans doute l'armée la plus puissante de nos jours. Cela explique aussi pourquoi les Royaumes germains respectent dans l'ensemble encore leur <i>fœdus</i> malgré l'absence de troupes romaines en Occident.
 La principale force de frappe de l'armée byzantine est ses cataphractes (ou cataphractaires). Ce sont des cavaliers lourds dont la monture et le cavalier sont protégés par des cottes de mailles voir des armures de plates. Ils sont à l'origine de charges dévastatrices à l'aide de leur contus.
@@ -417,14 +479,14 @@ Masse
 
 Pour des questions de simplicité, le système métrique est utilisé dans les documents d'Europa 507. Gardez donc ce tableau de conversions à portée de mains pour utiliser les unités romaines et enrichir ainsi le RP.
 Monnaies et commerce
-Le solidus
-Le solidus (sous en latin) est la monnaie d'or utilisée à travers l'Europe. Elle a été émise par Constantin 1er en 310 pour financer ses guerres. Plus tard, Thédose 1er fera frapper des semissis (moitié de solidus) et des tremissis (tier de solidus) rendant la monnaie plus accessible.
+Le <i>solidus</i>
+Le <i>solidus</i> (sous en latin) est la monnaie d'or utilisée à travers l'Europe. Elle a été émise par Constantin 1<sup>er</sup> en 310 pour financer ses guerres. Plus tard, Thédose 1<sup>er</sup> fera frapper des semissis (moitié de <i>solidus</i>) et des tremissis (tier de <i>solidus</i>) rendant la monnaie plus accessible.
 À notre époque, les différents rois barbares frappent leurs propres tremissis ayant la même valeur que les tremissis romains.
 La valeur des choses
 Il est très difficile de connaître les prix des objets de la vie courante de l'époque. Combien coutait un pain ? Un couteau ? Un marteau ? Du sel ? La valeur de ces objets variait en fonction de la région, de la saison, de l'abondance des récoltes et d'une multitude d'autres paramètres. De plus, il n'y a pas de trace écrite de ces transactions. La manière la plus sûre d'estimer la valeur courante de la monnaie est d'examiner les textes de loi qui fixent des amendes.
 Le Wergeld (littéralement ''Prix de l'homme'') fixe les amendes en cas de blessures graves ou de meurtres de personnes pour les peuples germaniques.
 Le commerce
-TODO chercher la valeur d'un solidus dans les lois
+TODO chercher la valeur d'un <i>solidus</i> dans les lois
 
 5. Les personnages
 Création de personnages
@@ -452,7 +514,7 @@ Les dix peuples principaux de cette époque sont listés ici et leur position da
 Groupement des royaumes francs de Gaule. Il viennent avec leurs alliés de vaincre les Wisigoths.
 Luttent pour repousser les Wisigoth hors de Gaule.
 2. Peuple burgonde
-Etablis en Gaule lors des invasions de la fin de l'Antiquité, les Burgondes sont fraîchement alliés avec Clovis 1er et ont participé à la victoire sur les Wisigoth.
+Etablis en Gaule lors des invasions de la fin de l'Antiquité, les Burgondes sont fraîchement alliés avec Clovis 1<sup>er</sup> et ont participé à la victoire sur les Wisigoth.
 Luttent pour repousser les Wisigoth hors de Gaule. Veulent s'allier durablement avec les Francs.
 3. Royaume barbare d'Alémanie
 Groupement de tribus indépendantes, elles ont été soumises par les Francs il y a 10 ans. Depuis, il n'y a plus de Roi des Alamans.
@@ -572,8 +634,8 @@ Les joueurs peuvent inscrire dans cet emplacement tous le matériel qu'ils trans
 9. Talents
 Tout au long de la vie du PJ et de ses passages de niveaux, le joueur pourra choisir des talents qui améliorent les compétences du PJ ou le maniement des armes. Les Talents sont à inscrire dans cette section.
 10. Bourse
-Les joueurs peuvent inscrire la quantité de Solidus, de Semissis (moitié de Solidus) et de Tremissis (tière de Solidus) que leur PJ possède.
-Le Solidus était la monnaie romaine qui a été conservée par les peuples germains à la disparition de l'empire romain d'Occident.
+Les joueurs peuvent inscrire la quantité de <i>Solidus</i>, de Semissis (moitié de <i>Solidus</i>) et de Tremissis (tière de <i>Solidus</i>) que leur PJ possède.
+Le <i>Solidus</i> était la monnaie romaine qui a été conservée par les peuples germains à la disparition de l'empire romain d'Occident.
 6. L'équipements
 Ce chapitre détaille le contenu des fiches d'équipements et leur utilisation en complément de la feuille de personnage.
 Les armes et les armures sont des équipements très important pour le PJ. C'est pourquoi leurs caractéristiques sont détaillées sur des fiches d'équipements afin que le joueur puisse avoir toutes ces informations à tout moment sous les yeux.

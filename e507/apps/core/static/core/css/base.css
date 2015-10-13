@@ -224,3 +224,17 @@ a:hover {
     border-left: 5px;
     border-color: #448bb7;
 }
+
+
+/****************************************/
+/*****         MODAL IMAGE          *****/
+/****************************************/
+.modal img{
+    max-width: 100%;
+    max-height: 600px;
+    border: 1px solid black;
+}
+.modal .modal-img{
+    text-align: center;
+    margin-bottom: 20px;
+}
