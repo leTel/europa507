@@ -13,28 +13,8 @@
         </div>
     </div>
     <div class="col-xs-3">
-        <div data-spy="affix" data-offset-top="252" data-offset-bottom"50">
-            <ul>
-                <li><a href="#">Start</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">test</a></li>
-                <li><a href="#">END</a></li>
+        <div id="side-menu" data-spy="affix" data-offset-top="252" data-offset-bottom"50">
+            <ul class="nav nav-list">
             </ul>
         </div>
     </div>
@@ -46,6 +26,21 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#nav-document').addClass('active');
+        
+        $('.document h1, .document h2').each(function(){
+            var title = $(this).children().html();
+            var id = $(this).attr('id');
+
+            if(title == undefined){
+                title = $(this).html();
+            }
+
+            if($(this)[0].tagName == "H2"){
+                $('#side-menu > ul').append("<li><ul><li><a href='#"+id+"'>"+title+"</a></li></ul></li>");
+            }else{
+                $('#side-menu > ul').append("<li><a href='#"+id+"'>"+title+"</a></li>");
+            }
+        }); 
     });
 </script>
 {% endblock %}

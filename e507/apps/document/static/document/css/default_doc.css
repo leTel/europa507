@@ -1,13 +1,55 @@
-div.document {
-    font-size: 0.9em;
+/* GENERAL */
+.document {
+    font-size: 0.8em;
+    text-align: justify;
 }
 
-h1 {
+/* TITLES */
+.document h1, .document h2, .document h3, .document h4 {
+    color: #448bb7;
+}
+.document h1 {
     font-size: 2em;
-    color: #448bb7;
+}
+.document h1:before, .document h2:before {
+    content:"";
+    display:block;
+    height:60px;
+    margin:-60px 0 0;
+}
+.document h2 {
+    font-size: 1.6em;
+}
+.document h3 {
+    font-size: 1.2em;
+}
+.document h4 {
+    font-size: 1em;
 }
 
-h2 {
-    font-size: 1.6em;
-    color: #448bb7;
+/* NOTE & EXAMPLE */
+.document .note, .document .example {
+    border-width: 0px 0px 0px 5px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 6px;
+    margin-left: 20px;
+}
+.document .note {
+    border-color: #a5d3ff;
+    background-color: #d8ecff;
+}
+.document .example {
+    border-color: #efef7c;
+    background-color: #ffffd8;
+}
+
+/* DICE */
+.document span.dice {
+    font-family: "courier new", monospace;
+    font-variant: small-caps;
+    border:1px solid #dde5ff;
+    border-radius: 2px;
+    background-color: #f2f8ff;
+    padding: 2px;
 }

@@ -18,12 +18,58 @@
 
 
 /****************************************/
+/*****  BOOTSTRAP PERSONALIZATION   *****/
+/****************************************/
+
+.btn {
+    border-radius: 2px;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #448BB7;
+    border-color: #0C334B;
+}
+
+.btn-primary:hover {
+    color: #FFF;
+    background-color: #0C334B;
+}
+
+.well {
+    border: 1px solid #d8ecff;
+    border-radius: 5px;
+    background-color: #fcfeff;
+}
+
+label {
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width:95%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width:90%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 85%;
+    }
+}
+
+/****************************************/
 /*****         STICKY FOOTER        *****/
 /****************************************/
 
 html,
 body {
   height: 100%;
+  position: relative;
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -33,9 +79,15 @@ body {
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -60px;
+  margin: 0 auto 0;
   /* Pad bottom by footer height */
   padding: 0 0 60px;
+}
+#wrap:before {
+    content:"";
+    display:block;
+    height:50px;
+    margin:-50px 0 0;
 }
 
 /* Set the fixed height of the footer here */
@@ -43,6 +95,7 @@ body {
   height: 60px;
   background-color: #f5f5f5;
 }
+
 
 /****************************************/
 /*****          NAV BAR             *****/
@@ -90,51 +143,6 @@ body {
 
 
 /****************************************/
-/*****  BOOTSTRAP PERSONALIZATION   *****/
-/****************************************/
-
-.btn {
-    border-radius: 2px;
-}
-
-.btn-primary {
-    color: #FFF;
-    background-color: #448BB7;
-    border-color: #0C334B;
-}
-
-.btn-primary:hover {
-    color: #FFF;
-    background-color: #0C334B;
-}
-
-.well {
-    border: 1px solid #d8ecff;
-    border-radius: 5px;
-    background-color: #f5fbff;
-}
-
-label {
-    font-weight: normal;
-}
-
-@media (min-width: 768px) {
-    .container {
-        width:95%;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        width:90%;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        width: 85%;
-    }
-}
-
-/****************************************/
 /*****          MAIN STYLE          *****/
 /****************************************/
 
@@ -163,12 +171,13 @@ div.page-intro {
 
 a {
     text-decoration: none;
-    color: #2050a0;
+    color: #aaa;
 }
 
 a:hover {
     text-decoration: none;
-    color: #000000;
+    color: #448bb7;
+    font-weight: normal;
 }
 
 #wrap > .container {
@@ -189,9 +198,29 @@ a:hover {
     position: relative;
 }
 
+
 /****************************************/
-/*****           AFFIX              *****/
+/*****       AFFIX SIDE MENU        *****/
 /****************************************/
 .affix {
     top: 60px;
+}
+
+#side-menu > ul {
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+#side-menu > ul > li > ul{
+    list-style-type: none;
+}
+
+#side-menu ul li a:hover {
+    background-color: transparent;
+}
+
+#side-menu ul li.active a {
+    color: #448bb7;
+    border-left: 5px;
+    border-color: #448bb7;
 }
