@@ -4,16 +4,16 @@
 
 @font-face {
     font-family: 'Roboto';
-         url('../fonts/roboto.woff') format('woff'),     /* Modern Browsers */
-         url('../fonts/roboto.ttf') format('truetype'),  /* Safari, Android, iOS */
-         url('../fonts/roboto.svg') format('svg');       /* Legacy iOS */
+         url("../fonts/roboto.e5d1ebbc367c.woff") format('woff'),     /* Modern Browsers */
+         url("../fonts/roboto.14147ca3288f.ttf") format('truetype'),  /* Safari, Android, iOS */
+         url("../fonts/roboto.803394c4fcc5.svg") format('svg');       /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'Stonehenge';
-         url('../fonts/stonehenge.woff') format('woff'),
-         url('../fonts/stonehenge.ttf') format('truetype'),
-         url('../fonts/stonehenge.svg') format('svg');
+         url("../fonts/stonehenge.69b70bcd4223.woff") format('woff'),
+         url("../fonts/stonehenge.27b376bde158.ttf") format('truetype'),
+         url("../fonts/stonehenge.36aa556f4536.svg") format('svg');
 }
 
 
