@@ -58,12 +58,8 @@
         $('#nav-document').addClass('active');
         
         $('.document h1, .document h2').each(function(){
-            var title = $(this).children().html();
+            var title = $(this).html();
             var id = $(this).attr('id');
-
-            if(title == undefined){
-                title = $(this).html();
-            }
 
             if($(this)[0].tagName == "H2"){
                 $('#side-menu > ul').append("<li><ul><li><a href='#"+id+"'>"+title+"</a></li></ul></li>");

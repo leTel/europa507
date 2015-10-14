@@ -4,6 +4,10 @@
     text-align: justify;
 }
 
+.document ol {
+    padding-left: 1em;
+}
+
 /* TITLES */
 .document h1, .document h2, .document h3, .document h4 {
     color: #448bb7;
@@ -24,7 +28,7 @@
     font-size: 1.2em;
 }
 .document h4 {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 /* NOTE & EXAMPLE */
@@ -54,6 +58,12 @@
     padding: 2px;
 }
 
+/* STRONG */
+.document strong {
+    color: #448bb7;
+    font-weight: normal;
+}
+
 /* IMAGE */
 .document figure {
     text-align: center;
@@ -63,6 +73,39 @@
 
 .document figure img {
     max-width: 75%;
+    max-height: 400px;
     border: 1px solid black;
     margin-bottom: 10px;
+    padding: 5px;
+}
+
+.document figure.large img {
+    max-width: 100%;
+    max-height: 800px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.document figure figcaption .caption {
+    color: #448bb7;
+}
+
+.document figure figcaption a.original-size-image {
+    padding-left: 5px;
+}
+
+
+
+/* TABLE */
+.table-hover > tbody > tr:hover{
+    background-color: #f2f8ff;
+}
+
+.document .numbering-container{
+	counter-reset: my-counter;
+}
+.document .numbering:before {
+	content: counter(my-counter);
+	counter-increment: my-counter;
 }
