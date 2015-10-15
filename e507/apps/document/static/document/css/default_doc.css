@@ -1,4 +1,5 @@
 /* GENERAL */
+
 .document {
     font-size: 0.8em;
     text-align: justify;
@@ -8,47 +9,64 @@
     padding-left: 1em;
 }
 
+
 /* TITLES */
-.document h1, .document h2, .document h3, .document h4 {
+.document h1,
+.document h2,
+.document h3,
+.document h4 {
     color: #448bb7;
 }
+
 .document h1 {
     font-size: 2em;
 }
-.document h1:before, .document h2:before {
+
+.document h1:before,
+.document h2:before {
     content:"";
     display:block;
     height:60px;
     margin:-60px 0 0;
 }
+
 .document h2 {
     font-size: 1.6em;
 }
+
 .document h3 {
     font-size: 1.2em;
 }
+
 .document h4 {
     font-size: 1.5em;
 }
 
+
 /* NOTE & EXAMPLE */
-.document .note, .document .example {
+
+.document .note,
+.document .example {
     border-width: 0px 0px 0px 5px;
     border-style: solid;
     border-radius: 3px;
     padding: 6px;
     margin-left: 20px;
 }
+
 .document .note {
     border-color: #a5d3ff;
     background-color: #d8ecff;
 }
+
 .document .example {
     border-color: #efef7c;
     background-color: #ffffd8;
 }
 
+
 /* DICE */
+
 .document span.dice {
     font-family: "courier new", monospace;
     font-variant: small-caps;
@@ -58,13 +76,17 @@
     padding: 2px;
 }
 
+
 /* STRONG */
+
 .document strong {
     color: #448bb7;
     font-weight: normal;
 }
 
+
 /* IMAGE */
+
 .document figure {
     text-align: center;
     margin-top: 20px;
@@ -96,8 +118,8 @@
 }
 
 
-
 /* TABLE */
+
 .table-hover > tbody > tr:hover{
     background-color: #f2f8ff;
 }
@@ -105,6 +127,7 @@
 .document .numbering-container{
 	counter-reset: my-counter;
 }
+
 .document .numbering:before {
 	content: counter(my-counter);
 	counter-increment: my-counter;
