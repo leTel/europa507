@@ -23,13 +23,15 @@
     font-size: 2em;
 }
 
-.document h1:before,
+/*.document h1:before,
 .document h2:before {
     content:"";
     display:block;
     height:60px;
     margin:-60px 0 0;
+    z-index:-1;
 }
+*/
 
 .document h2 {
     font-size: 1.6em;
