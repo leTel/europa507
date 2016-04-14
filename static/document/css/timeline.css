@@ -1,0 +1,17 @@
+.document.timeline h2 {
+    font-size: 1.2em;
+}
+
+.document.timeline .major-date {
+    margin-right: -1px;
+    border-right: 2px solid #448bb7;
+}
+
+.document.timeline .event {
+    margin-left: -1px;
+    border-left: 2px solid #448bb7;
+}
+
+.document.timeline .major-date {
+    text-align: right;
+}
