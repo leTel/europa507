@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from . import views
+from e507.apps.news import views
 
 urlpatterns = [
     url(r'^$', views.home_view, name='home_view_url'),
